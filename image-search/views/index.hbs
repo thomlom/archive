@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center">Image Search Abstraction Layer</h1>
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item"><strong>User story 1:</strong> I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+            <li class="list-group-item"><strong>User story 2:</strong> I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+            <li class="list-group-item"><strong>User story 3:</strong> I can get a list of the most recently submitted search strings.</li>
+            <li class="list-group-item"><em>Example usage:</em>
+                <br> <code>https://image-search-thomlom.herokuapp.com/search/code?offset=3</code>
+                <hr>
+                <em>Example output:</em>
+                <br> <code>[{"title":"Papel de Parede Matrix","url":"http://download.ultradownloads.com.br/wallpaper/127096_Papel-de-Parede-Matrix--127096_1680x1050.jpg","sourceUrl":"http://ultradownloads.com.br/papel-de-parede/Matrix--127096/"},{"title":"Bar code","url":"http://www.psdgraphics.com/file/bar-code-1280x960.jpg","sourceUrl":"http://www.psdgraphics.com/backgrounds/barcode-font-graphics/"},{"title":"Should you learn to code? | Webdesigner Depot","url":"http://netdna.webdesignerdepot.com/uploads/2012/11/code.jpg","sourceUrl":"http://www.webdesignerdepot.com/2012/11/should-you-learn-to-code/"}]</code>
+            </li>
+            <li class="list-group-item"><em>Example usage 2:</em>
+                <br> <code>https://image-search-thomlom.herokuapp.com/latest</code>
+                <hr>
+                <em>Example output 2:</em>
+                <br> <code>[{"term":"funny cats","date":"2016-08-31T15:19:40.603Z"},{"term":"funny cats","date":"2016-08-31T15:19:36.814Z"},{"term":"funny cats","date":"2016-08-31T15:19:15.706Z"},{"term":"latest","date":"2016-08-31T15:18:47.522Z"},{"term":"latest","date":"2016-08-31T15:18:10.454Z"},{"term":"dogs","date":"2016-08-31T15:18:05.764Z"},{"term":"good morning","date":"2016-08-31T15:08:30.821Z"},{"term":"hey","date":"2016-08-31T15:08:21.983Z"},{"term":"hey!!!","date":"2016-08-31T15:08:14.847Z"},{"term":"dogs","date":"2016-08-31T15:08:08.555Z"}]</code>
+            </li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+</body>
+
+</html>
