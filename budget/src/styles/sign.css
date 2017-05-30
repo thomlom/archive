@@ -1,0 +1,15 @@
+.signin-form{
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.no-account {
+  margin-top: 1%;
+}

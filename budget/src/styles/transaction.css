@@ -1,0 +1,12 @@
+.transaction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense {
+  background-color: #ffc0ca;
+}
+
+.income {
+  background-color: #aef3b1;
+}
