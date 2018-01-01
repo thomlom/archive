@@ -1,0 +1,22 @@
+body {
+  background: linear-gradient(70deg, lightgray, white);
+}
+
+#presentation {
+  background-image: url("assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fill-viewport {
+  min-height: 100vh;
+}
+
+.logo {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.text-90-white {
+  color: rgba(255, 255, 255, 0.9);
+}
