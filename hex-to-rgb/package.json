@@ -1,0 +1,21 @@
+{
+  "name": "simple-hex-to-rgb",
+  "version": "1.0.0",
+  "description": "Provides a function that converts hex colors to RGB and vice versa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "color",
+    "hex",
+    "rgb",
+    "convert"
+  ],
+  "author": "t.lombart97@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomlom/coding-challenges/tree/master/coding-challenge-6/Q3"
+  }
+}
