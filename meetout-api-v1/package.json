@@ -1,0 +1,67 @@
+{
+  "name": "meetout-api-v1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:thomlom/meetout-api-v1.git",
+  "author": "Thomas Lombart <t.lombart97@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "eslint ./",
+    "test": "NODE_ENV=test && jest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "helmet": "^3.14.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^1.1.2",
+    "jest": "^23.6.0",
+    "lint-staged": "^7.3.0",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.3",
+    "supertest": "^3.3.0"
+  }
+}
