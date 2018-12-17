@@ -1,0 +1,8 @@
+endpoint: https://sick-fits-prod-ee6d412771.herokuapp.com
+# endpoint we will hit
+datamodel: datamodel.prisma
+secret: ${env:PRISMA_SECRET} # Uncomment when we go to production
+# Post-deploy hook
+hooks:
+  post-deploy:
+    - graphql get-schema -p prisma
