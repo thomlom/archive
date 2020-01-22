@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "name": "trading-api",
+  "env": {
+    "ALPHA_VANTAGE_API_KEY": "@alpha-vantage-api-key"
+  }
+}
