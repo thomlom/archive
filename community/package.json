@@ -9,7 +9,7 @@
         "test": "mocha test/*.js --require babel-register"
     },
     "dependencies": {
-        "axios": "^0.16.2",
+        "axios": "^0.21.1",
         "babel-cli": "^6.24.1",
         "babel-preset-env": "^1.7.0",
         "bcrypt-nodejs": "^0.0.3",
